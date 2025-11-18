@@ -1,16 +1,15 @@
-import { Routes, Route } from "react-router-dom";
-import MainLayout from "./layout/mainLayout.jsx";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
+    <BrowserRouter>
+      <Routes>
         <Route path="/" element={<Home />} />
-      </Route>
 
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
