@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap");
 
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
@@ -6,11 +6,22 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
-  --font-stack:  'Stack Sans Text', sans-serif;
+  --font-stack: "Stack Sans Text", sans-serif;
 
-  --color-primary: #1D4ED8;
-  --color-secondary: #ea3333;
-  --color-foreground: #eeeeee;
+  /* --primary: #1d4ed8;
+    --secondary: #ea3333;
+    --foreground: #eeeeee; */
+
+  --color-section-bg: #f9f9f9;
+
+  --color-primary: rgb(45, 125, 245);
+  --color-primary-foreground: rgb(0 0% 100%);
+
+  --color-secondary: rgb(217, 43, 43);
+  --color-secondary-foreground: rgb(172, 33, 33);
+
+  --color-muted: rgb(28, 35, 56);
+  --color-muted-foreground: rgb(54, 61, 82);
 }
 
 @layer base {
