@@ -1,8 +1,8 @@
 const CTA = () => {
   return (
-    <div>
-      cta
-    </div>
+    <section>
+      <h1>Pronto para começar sua jornada?</h1>
+    </section>
   )
 }
 

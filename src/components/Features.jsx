@@ -1,22 +1,24 @@
-import { BookOpen, Users, Clock, Award } from "lucide-react";
+import { BookOpen, Users, Award } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: BookOpen,
-      title: "Método Interativo",
-      description:
-        "Aprenda através de exercícios práticos e conversação real desde a primeira aula.",
+      title: t("features.feature1.title"),
+      description: t("features.feature1.description"),
     },
     {
       icon: Users,
-      title: "Professores Fluentes",
-      description: "Aulas com professores certificados e que têm fluência no idioma.",
+      title: t("features.feature2.title"),
+      description: t("features.feature2.description"),
     },
     {
       icon: Award,
-      title: "Certificação",
-      description: "Receba certificado reconhecido ao completar cada nível.",
+      title: t("features.feature3.title"),
+      description: t("features.feature3.description"),
     },
   ];
 
@@ -25,10 +27,10 @@ const Features = () => {
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
-            Por que escolher nossos cursos?
+            {t("features.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Uma experiência de aprendizado completa e eficiente
+            {t("features.subTitle")}
           </p>
         </div>
 

@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Início",
+    "courses": "Cursos",
+    "contact": "Contato"
+  },
+  "header": {
+    "subTitle": "Aprenda um novo idioma hoje",
+    "title": "Domine Inglês e Espanhol",
+    "paragraph": "Aprenda com professores nativos e metodologia comprovada. Aulas ao vivo, flexíveis e adaptadas ao seu ritmo.",
+    "button1": "Ver Cursos",
+    "button2": "Entre em Contato"
+  },
+  "features": {
+    "title": "Por que escolher nossos cursos?",
+    "subTitle": "Uma experiência de aprendizado completa e eficiente.",
+    "feature1": {
+      "title": "Professores Fluentes",
+      "description": "Aprenda com especialistas que falam o idioma fluentemente."
+    },
+    "feature2": {
+      "title": "Metodologia Comprovada",
+      "description": "Técnicas de ensino eficazes para garantir seu progresso."
+    },
+    "feature3": {
+      "title": "Certificação",
+      "description": "Receba certificado reconhecido ao completar cada nível."
+    }
+  },
+  "courses": {
+    "title": "Nossos Cursos",
+    "subTitle": "Escolha o idioma que deseja aprender e comece sua jornada",
+    "course1": {
+      "title": "Inglês",
+      "subTitle": "Níveis disponíveis",
+      "levels": ["Básico", "Intermediário", "Avançado"],
+      "highlights": [
+        "Conversação desde o primeiro dia",
+        "Preparação para certificações internacionais",
+        "Inglês para negócios"
+      ]
+    },
+    "course2": {
+      "title": "Espanhol",
+      "subTitle": "Níveis disponíveis",
+      "levels": ["Básico", "Intermediário", "Avançado"],
+      "highlights": [
+        "Conversação desde o primeiro dia",
+        "Cultura e expressões regionais",
+        "Espanhol para viagens"
+      ]
+    }
+  },
+
+  "description": "Aprenda inglês e espanhol com professores especializados.",
+  "button": "Saiba mais"
+}

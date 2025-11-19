@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "contact": "Contact"
+  },
+  "header": {
+    "subTitle": "Learn new languages today",
+    "title": "Master English and Spanish",
+    "paragraph": "Learn with native teachers and proven methodology. Live, flexible classes tailored to your pace.",
+    "button1": "View Courses",
+    "button2": "Get in Touch"
+  },
+  "features": {
+    "title": "Why choose our courses?",
+    "subTitle": "A complete and efficient learning experience.",
+    "feature1": {
+      "title": "Fluent Teachers",
+      "description": "Learn from experts who speak the language fluently."
+    },
+    "feature2": {
+      "title": "Proven Methodology",
+      "description": "Effective teaching techniques to ensure your progress."
+    },
+    "feature3": {
+      "title": "Certification",
+      "description": "Receive recognized certification upon completing each level."
+    }
+  },
+  "courses": {
+    "title": "Our Courses",
+    "subTitle": "Choose the language you want to learn and start your journey",
+    "course1": {
+      "title": "English",
+      "subTitle": "Available levels",
+      "levels": ["Basic", "Intermediate", "Advanced"],
+      "highlights": [
+        "Conversation from day one",
+        "Preparation for international certifications",
+        "Business English"
+      ]
+    },
+    "course2": {
+      "title": "Spanish",
+      "subTitle": "Available levels",
+      "levels": ["Basic", "Intermediate", "Advanced"],
+      "highlights": [
+        "Conversation from day one",
+        "Culture and regional expressions",
+        "Spanish for travel"
+      ]
+    }
+  }
+}

@@ -12,7 +12,7 @@
     --secondary: #ea3333;
     --foreground: #eeeeee; */
 
-  --color-section-bg: #f9f9f9;
+  --color-section-bg: #fdfdfd;
 
   --color-primary: rgb(45, 125, 245);
   --color-primary-foreground: rgb(0 0% 100%);
@@ -22,6 +22,8 @@
 
   --color-muted: rgb(28, 35, 56);
   --color-muted-foreground: rgb(54, 61, 82);
+
+  --color-light-foreground: rgb(212, 236, 255);
 }
 
 @layer base {
