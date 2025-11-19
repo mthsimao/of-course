@@ -2,11 +2,11 @@ import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
-    <footer className="bg-footer-bg text-white p-12">
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-footer-bg text-white p-6 md:p-12">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4">
         <div className="footer-div">
           <h3 className="title">Of Course</h3>
           <p className="text-footer-link">{t("footer.subTitle")}</p>
@@ -21,11 +21,28 @@ const Footer = () => {
         </div>
 
         <div className="footer-div">
-          <h3>{t("footer.company")}</h3>
+          <h3>{t("footer.socialMedia")}</h3>
           <ul className="space-y-3">
-            <li><a href="">{t("footer.methodology")}</a></li>
-            <li><a href="">{t("footer.ourTeachers")}</a></li>
-            <li><a href="">{t("footer.aboutUs")}</a></li>
+            <li>
+              <a
+                href="https://www.facebook.com/ofcourseenglish"
+                target="_blank"
+                className="flex flex-row items-center gap-3 hover:underline"
+              >
+                <Facebook size={24} strokeWidth={2}/>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ofcoursecordeiro/"
+                target="_blank"
+                className="flex flex-row items-center gap-3 hover:underline"
+              >
+                <Instagram size={24} strokeWidth={2}/>
+                <span>Instagram</span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -45,21 +62,6 @@ const Footer = () => {
             <li>
               <Mail size={20} />
               <span>ofcourse10@gmail.com</span>
-            </li>
-            <li className="flex flex-row items-center gap-3">
-              <a
-                href="https://www.facebook.com/ofcourseenglish"
-                target="_blank"
-              >
-                <Facebook size={20} />
-              </a>
-
-              <a
-                href="https://www.instagram.com/ofcoursecordeiro/"
-                target="_blank"
-              >
-                <Instagram size={20} />
-              </a>
             </li>
           </ul>
         </div>
