@@ -1,4 +1,4 @@
-import englishFlag from "../assets/images/eua-flag.png";
+import euaUkFlag from "../assets/images/euaUkFlag.jpg";
 import spanishFlag from "../assets/images/esp-flag.svg";
 import { CheckCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -10,7 +10,7 @@ const Courses = () => {
     {
       title: t("courses.course1.title"),
       subTitle: t("courses.course1.subTitle"),
-      image: englishFlag,
+      image: euaUkFlag,
       levels: t("courses.course1.levels", { returnObjects: true }),
       highlights: t("courses.course1.highlights", { returnObjects: true }),
     },
@@ -24,7 +24,7 @@ const Courses = () => {
   ];
 
   return (
-    <section className="py-20 bg-section-bg" id="cursos">
+    <section className="py-25 bg-section-bg" id="cursos">
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
@@ -62,7 +62,7 @@ const Courses = () => {
                     {course.levels.map((level, idx) => (
                       <span
                         key={idx}
-                        className="bg-light-foreground text-primary px-3 py-1 rounded-full text-sm"
+                        className="bg-light-foreground/70 text-primary font-medium px-4 py-1 rounded-full text-sm"
                       >
                         {level}
                       </span>
@@ -74,7 +74,7 @@ const Courses = () => {
                   {course.highlights.map((highlight, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                      <span className="text-foreground">{highlight}</span>
+                      <span className="text-muted-foreground">{highlight}</span>
                     </li>
                   ))}
                 </ul>
