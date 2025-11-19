@@ -20,6 +20,8 @@
   --color-secondary: rgb(217, 43, 43);
   --color-secondary-foreground: rgb(172, 33, 33);
 
+  --color-btn-wpp: rgb(37, 211, 102);
+
   --color-muted: rgb(28, 35, 56);
   --color-muted-foreground: rgb(54, 61, 82);
 
@@ -27,6 +29,11 @@
 }
 
 @layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
   .footer-div {
     display: flex;
     flex-direction: column;

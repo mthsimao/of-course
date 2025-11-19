@@ -49,5 +49,10 @@
         "Español para viajar"
       ]
     }
+  },
+  "cta": {
+    "title": "¿Listo para empezar a aprender?",
+    "subTitle": "Habla con nuestros asesores y encuentra el curso perfecto para ti.",
+    "button": "Contáctanos"
   }
 }

@@ -51,7 +51,9 @@
       ]
     }
   },
-
-  "description": "Aprenda inglês e espanhol com professores especializados.",
-  "button": "Saiba mais"
+  "cta": {
+    "title": "Pronto para começar a aprender?",
+    "subTitle": "Converse com nossos consultores e encontre o curso perfeito para você.",
+    "button": "Entre em Contato"
+  }
 }

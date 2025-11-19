@@ -50,5 +50,10 @@
         "Spanish for travel"
       ]
     }
+  },
+  "cta": {
+    "title": "Ready to start learning?",
+    "subTitle": "Talk with our advisors and find the perfect course for you.",
+    "button": "Contact Us"
   }
 }
