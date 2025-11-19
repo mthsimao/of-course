@@ -9,9 +9,9 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const navLinks = [
-    { label: t("nav.home"), href: "/" },
-    { label: t("nav.courses"), href: "/cursos" },
-    { label: t("nav.contact"), href: "/contato" }
+    { label: t("nav.home"), href: "#" },
+    { label: t("nav.courses"), href: "#cursos" },
+    { label: t("nav.contact"), href: "#contato" }
   ];
 
   return (

@@ -17,7 +17,7 @@ const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center text-white">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/40">
             <Globe className="w-4 h-4" />
@@ -36,7 +36,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-60 sm:w-auto  mx-auto">
             <button className="bg-secondary hover:bg-secondary/85 rounded-2xl flex flex-row items-center gap-2 hover:gap-3 transition-all cursor-pointer font-semibold text-xl py-4 px-6">
-              <a href="#courses">{t("header.button1")}</a>
+              <a href="#cursos">{t("header.button1")}</a>
               <ArrowRight size={16}/>
             </button>
 
