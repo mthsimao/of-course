@@ -55,5 +55,17 @@
     "title": "Pronto para começar a aprender?",
     "subTitle": "Converse com nossos consultores e encontre o curso perfeito para você.",
     "button": "Entre em Contato"
+  },
+  "footer": {
+    "subTitle": "Transformando vidas através do aprendizado de idiomas",
+    "courses": "Cursos",
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "company": "Empresa",
+    "methodology": "Metodologia",
+    "ourTeachers": "Nossos Professores",
+    "aboutUs": "Sobre nós",
+    "contact": "Contato",
+    "allRightsReserved": "Todos os direitos reservados."
   }
 }

@@ -55,5 +55,17 @@
     "title": "Ready to start learning?",
     "subTitle": "Talk with our advisors and find the perfect course for you.",
     "button": "Contact Us"
+  },
+  "footer": {
+    "subTitle": "Transforming lives through language learning",
+    "courses": "Courses",
+    "english": "English",
+    "spanish": "Spanish",
+    "company": "Company",
+    "methodology": "Methodology",
+    "ourTeachers": "Our Teachers",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "allRightsReserved": "All rights reserved."
   }
 }

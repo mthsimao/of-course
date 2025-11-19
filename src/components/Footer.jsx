@@ -1,45 +1,76 @@
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const navLinks = [
-    { title: "Inglês", path: "/english" },
-    { title: "Espanhol", path: "/spanish" },
-  ];
+  const { t } = useTranslation()
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-     
-      <div className="footer-div">
-        <h2>OF COURSE</h2>
-        <p>Transformando vidas através do aprendizado de idiomas</p>
-      </div>
+    <footer className="bg-footer-bg text-white p-12">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="footer-div">
+          <h3 className="title">Of Course</h3>
+          <p className="text-footer-link">{t("footer.subTitle")}</p>
+        </div>
 
-      <div className="footer-div">
-        <h2>Cursos</h2>
-        <ul>
-          {navLinks.map((navLink) => (
-            <li key={navLink.title}>
-              <Link to={navLink.path}>{navLink.title}</Link>
+        <div className="footer-div">
+          <h3>{t("footer.courses")}</h3>
+          <ul className="space-y-3">
+            <li>{t("footer.english")}</li>
+            <li>{t("footer.spanish")}</li>
+          </ul>
+        </div>
+
+        <div className="footer-div">
+          <h3>{t("footer.company")}</h3>
+          <ul className="space-y-3">
+            <li><a href="">{t("footer.methodology")}</a></li>
+            <li><a href="">{t("footer.ourTeachers")}</a></li>
+            <li><a href="">{t("footer.aboutUs")}</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-div">
+          <h3>{t("footer.contact")}</h3>
+
+          <ul className="space-y-3">
+            <li>
+              <Phone size={20} />
+              <a
+                href="https://api.whatsapp.com/send/?phone=5522997008289&text&app_absent=0"
+                target="_blank"
+              >
+                (22) 99700-8289
+              </a>
             </li>
-          ))}
-        </ul>
+            <li>
+              <Mail size={20} />
+              <span>ofcourse10@gmail.com</span>
+            </li>
+            <li className="flex flex-row items-center gap-3">
+              <a
+                href="https://www.facebook.com/ofcourseenglish"
+                target="_blank"
+              >
+                <Facebook size={20} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/ofcoursecordeiro/"
+                target="_blank"
+              >
+                <Instagram size={20} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div className="footer-div">
-        <h2>empresa</h2>
-        <a href="#">sobre nos</a>
-        <a href="#">metodologia</a>
-        <a href="#">nossos professores</a>
+      <div className="mt-6">
+        <div className="border-t border-footer-link/40 pt-8 text-center text-footer-link/80">
+          <p>&copy; 2025 Of Course. {t("footer.allRightsReserved")}</p>
+        </div>
       </div>
-
-      <div className="footer-div">
-        <h2>contato</h2>
-        <p className="item"><Phone /> (22) 99700-8289</p>
-        <p className="item"><Mail /> ofcoursecordeiro@gmail.com</p>
-        <p className="item"><Instagram /> - <Facebook /> </p>
-      </div>
-    </div>
+    </footer>
   );
 };
 
