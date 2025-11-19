@@ -15,6 +15,8 @@ export default function LanguageSelector() {
     { code: "es", label: "Español", flag: espFlag },
   ];
 
+  const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
+
   return (
     <div className="relative">
       <button
@@ -22,25 +24,32 @@ export default function LanguageSelector() {
         aria-expanded={open}
         className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow border hover:bg-gray-100 focus:outline-none"
       >
-        <span className="text-sm">Language</span>
+        <img src={currentLang.flag} alt={currentLang.label} className="w-6 h-4" />
+        <span className="text-sm">{currentLang.label}</span>
         <ChevronDown size={16} />
       </button>
 
       {open && (
         <div className="absolute right-0 mt-2 bg-white shadow-md rounded-lg border py-1 w-44 z-50">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => {
-                i18n.changeLanguage(lang.code);
-                setOpen(false);
-              }}
-              className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 w-full text-left"
-            >
-              <img src={lang.flag} alt={lang.label} className="w-7 h-5" />
-              <span className="text-sm">{lang.label}</span>
-            </button>
-          ))}
+          {languages.map((lang) => {
+            const isActive = lang.code === i18n.language;
+
+            return (
+              <button
+                key={lang.code}
+                onClick={() => {
+                  i18n.changeLanguage(lang.code);
+                  setOpen(false);
+                }}
+                className={`flex items-center gap-3 px-4 py-2 w-full text-left hover:bg-gray-100 ${
+                  isActive ? "bg-gray-200 font-medium" : ""
+                }`}
+              >
+                <img src={lang.flag} alt={lang.label} className="w-7 h-5" />
+                <span className="text-sm">{lang.label}</span>
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
