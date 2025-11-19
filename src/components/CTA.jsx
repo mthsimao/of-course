@@ -17,7 +17,7 @@ const CTA = () => {
 
           <button className="bg-secondary rounded-full px-6 py-2">
             <a
-              href="hhttps://api.whatsapp.com/send/?phone=5522997008289&text&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5522997008289&text&app_absent=0"
               target="_blank"
               className="flex flex-row items-center gap-2 hover:gap-4 transition-all text-white font-stack font-bold"
             >
