@@ -23,7 +23,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-section-bg">
+    <section className="py-15 bg-section-bg">
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
@@ -40,7 +40,7 @@ const Features = () => {
             return (
               <div
                 key={index}
-                className="border-none shadow-xs hover:shadow-lg transition-shadow max-w-100 rounded-2xl"
+                className="border-none shadow hover:shadow-lg transition-shadow max-w-100 rounded-2xl"
               >
                 <div className="text-center p-6">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

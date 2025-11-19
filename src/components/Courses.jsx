@@ -24,7 +24,7 @@ const Courses = () => {
   ];
 
   return (
-    <section className="py-25 bg-section-bg" id="cursos">
+    <section className="py-15 bg-section-bg" id="cursos">
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
@@ -35,13 +35,13 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 max-w-4xl mx-auto">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow rounded-xl"
+              className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow rounded-xl max-w-[400px] mx-auto flex flex-col"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={course.image}
                   alt={`Curso de ${course.title}`}
@@ -49,7 +49,7 @@ const Courses = () => {
                 />
               </div>
 
-              <div className="p-8">
+              <div className="p-6 md:p-8">
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   {course.title}
                 </h3>

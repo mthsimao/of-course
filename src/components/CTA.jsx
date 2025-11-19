@@ -5,13 +5,13 @@ const CTA = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-primary text-white" id="contato">
+    <section className="py-15 bg-primary text-white" id="contato">
       <div className="mx-auto p-4">
-        <div className="flex flex-col items-center justify-center gap-4 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
+        <div className="flex flex-col items-center justify-center gap-4 text-center my-8 md:my-12">
+          <h2 className="text-[2.5rem] md:text-5xl font-bold mb-2">
             {t("cta.title")}
           </h2>
-          <p className="text-xl max-w-2xl mx-auto mb-4">
+          <p className="sm:text-lg max-w-xl mx-auto mb-4">
             {t("cta.subTitle")}
           </p>
 
