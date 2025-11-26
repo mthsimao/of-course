@@ -1,25 +1,31 @@
 import euaUkFlag from "../assets/images/euaUkFlag.jpg";
 import spanishFlag from "../assets/images/esp-flag.svg";
 import { CheckCircle } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 const Courses = () => {
-  const { t } = useTranslation();
 
   const courses = [
     {
-      title: t("courses.course1.title"),
-      subTitle: t("courses.course1.subTitle"),
+      title: "Inglês",
+      subTitle: "Níveis disponíveis",
       image: euaUkFlag,
-      levels: t("courses.course1.levels", { returnObjects: true }),
-      highlights: t("courses.course1.highlights", { returnObjects: true }),
+      levels: ["Básico", "Intermediário", "Avançado"],
+      highlights: [
+        "Conversação desde o primeiro dia",
+        "Preparação para certificações internacionais",
+        "Inglês para negócios",
+      ],
     },
     {
-      title: t("courses.course2.title"),
-      subTitle: t("courses.course2.subTitle"),
+      title: "Espanhol",
+      subTitle: "Níveis disponíveis",
       image: spanishFlag,
-      levels:  t("courses.course2.levels", { returnObjects: true }),
-      highlights: t("courses.course2.highlights", { returnObjects: true }),
+      levels: ["Básico", "Intermediário", "Avançado"],
+      highlights: [
+        "Conversação desde o primeiro dia",
+        "Cultura e expressões regionais",
+        "Espanhol para viagens"
+      ],
     },
   ];
 
@@ -28,10 +34,10 @@ const Courses = () => {
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
-            {t("courses.title")}
+            Nossos Cursos
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t("courses.subTitle")}
+            Escolha o idioma que deseja aprender e comece sua jornada
           </p>
         </div>
 

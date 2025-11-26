@@ -1,24 +1,21 @@
 import { BookOpen, Users, Award } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 const Features = () => {
-  const { t } = useTranslation();
-
   const features = [
     {
       icon: BookOpen,
-      title: t("features.feature1.title"),
-      description: t("features.feature1.description"),
+      title: "Professores Fluentes",
+      description: "Aprenda com especialistas que falam o idioma fluentemente.",
     },
     {
       icon: Users,
-      title: t("features.feature2.title"),
-      description: t("features.feature2.description"),
+      title: "Metodologia Comprovada",
+      description: "Técnicas de ensino eficazes para garantir seu progresso.",
     },
     {
       icon: Award,
-      title: t("features.feature3.title"),
-      description: t("features.feature3.description"),
+      title: "Certificação",
+      description: "Receba certificado reconhecido ao completar cada nível.",
     },
   ];
 
@@ -27,10 +24,10 @@ const Features = () => {
       <div className="mx-auto p-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-muted font-bold mb-4">
-            {t("features.title")}
+            Por que escolher nossos cursos?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t("features.subTitle")}
+            Uma experiência de aprendizado completa e eficiente.
           </p>
         </div>
 
